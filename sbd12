@@ -1,0 +1,3 @@
+BEGIN
+	SELECT idBarang as 'id',namaBarang,IF(stok>50,'Masih Banyak',IF(stok>=10,'Tercukupi','Kurang')) as 'Status'  FROM barang WHERE idBarang=id_barang;
+END
